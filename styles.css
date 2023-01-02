@@ -5,9 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
+    
 }
 /*Header*/
 .header{
@@ -38,3 +36,70 @@
     font-weight: 300;
 
 }
+
+main {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+  }
+
+  #hero {
+    margin-top: 65px;
+    padding: 70px 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    flex-direction: column;
+  }
+
+  .hero-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 70%;
+    padding: 30px;
+  }
+
+  .hero-info-left{
+    gap: 20px;
+  }
+
+  .hero-info img{
+    width: 70%;
+    border-radius: 2rem;
+    padding: 15px;
+  }
+
+  .hero-info-leftbutton{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .call_action{
+    background: white;
+    border: 1px rgb(33, 21, 65);
+    padding: 10px 35px;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .hero-card{
+    padding: 30px;
+  }
+
+  .hero-card p{
+    text-align: justify;
+    text-indent: 7px;
+    line-height: 20px;
+  }
