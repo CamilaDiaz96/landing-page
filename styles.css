@@ -16,6 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 2
 }
 
 .navbar img{
@@ -52,8 +56,8 @@ main {
 
   #hero {
     margin-top: 65px;
-    padding: 70px 0;
-    width: 80%;
+    padding: 20px 10px 20px 10px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,17 +68,20 @@ main {
   .hero-info {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    width: 70%;
-    padding: 30px;
+    width: 90%;
+    padding: 20px;
   }
 
   .hero-info-left{
-    gap: 20px;
+    gap: 40px;
+    justify-content: center;
   }
 
   .hero-info img{
-    width: 70%;
+    width: 50%;
     border-radius: 2rem;
     padding: 15px;
   }
@@ -82,7 +89,7 @@ main {
   .hero-info-leftbutton{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     padding-top: 10px;
   }
 
@@ -107,3 +114,32 @@ main {
   .hero-card ul{
     padding: 30px;
   }
+
+  @media (min-width: 576px) {
+    .hero-info {
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 996px) {
+    .hero-info {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        width: 90%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
